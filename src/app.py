@@ -19,3 +19,9 @@ def check_password():
     if validate_password(password):
         return jsonify({'status': 'strong'})
     return jsonify({'status': 'weak'})
+
+def main():
+    app.run(host='0.0.0.0', port=8080)
+
+if __name__ == '__main__':
+    main()
