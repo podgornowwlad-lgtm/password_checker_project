@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 # Экспортировать PYTHONPATH
 export PYTHONPATH=src  # Linux/Mac
-# set PYTHONPATH=src     # Windows
+$env:PYTHONPATH="src"     # Windows
 
 # Запуск тестов
 python -m unittest src.tests
